@@ -1,0 +1,117 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #0F0F0F;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 10.2rem 0;
+}
+
+.logo {
+  font-size: 1.125rem;
+  transition: .25s;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: .84;
+  transition: .25s;
+}
+
+.nav-links {
+  display: flex;
+  font-size: 1.125rem;
+}
+
+.nav-links a {
+  color: #FFF;
+  margin-left: 3rem;
+  opacity: .54;
+  text-decoration: none;
+  transition: .5s ease-out;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  transition: .5s;
+}
+
+#current-page {
+  opacity: 1;
+  cursor: default;
+}
+
+.hero-text {
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.hero-text p {
+  opacity: .54;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 1.212;
+  margin: .5rem 0;
+}
+
+.hero-text p:last-child {
+  text-align: right;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  opacity: .87;
+  padding: 3rem 10.2rem 2rem;
+}
+
+.project {
+  padding: 0 10.2rem 3rem;
+  display: flex;
+}
+
+.project-images {
+  display: flex;
+}
+
+img {
+  padding-right: 1rem;
+}
+
+.asel-image {
+  filter: drop-shadow(5px 7px 0px #391CB0);
+  transition: .2s ease-out;
+}
+
+.asel-image:hover {
+  filter: drop-shadow(10px 14px 0px #391CB0);
+  transition: .2s ease-out;
+}
+
+.project-info {
+  padding-left: 2rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.222;
+  margin-bottom: .5rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.562;
+}
