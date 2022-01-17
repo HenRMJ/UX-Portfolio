@@ -1,5 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.p-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90vh;
+  z-index: 10;
+  background-color: rgba(0,0,0, .8);
+  background-size: 200%;
+  box-shadow: 0px 0px 0px 1263px rgba(0, 0, 0, 0.8);
 }
 
 header {
@@ -122,22 +138,22 @@ h3 {
   padding-bottom: 3rem;
 }
 
-.asel-image {
+.asel-image-d, .asel-image-m {
   filter: drop-shadow(5px 7px 0px #391CB0);
   transition: .2s ease-out;
 }
 
-.asel-image:hover {
+.asel-image-d:hover, .asel-image-m:hover {
   filter: drop-shadow(10px 14px 0px #391CB0);
   transition: .2s ease-out;
 }
 
-.chess-image {
+.chess-image-d, .chess-image-m {
   filter: drop-shadow(5px 7px 0px #3B730D);
   transition: .2s ease-out;
 }
 
-.chess-image:hover {
+.chess-image-d:hover, .chess-image-m:hover {
   filter: drop-shadow(10px 14px 0px #3B730D);
   transition: .2s ease-out;
 }
@@ -151,6 +167,7 @@ h3 {
 
 .hides {
   display: none;
+  transition: 1s ease-out;
 }
 
 @media screen and (min-width: 1440px) {
@@ -207,13 +224,13 @@ h3 {
   }
 
   .project {
-    padding: 0 2% 3rem;
+    padding: 0 2% 4rem;
     display: flex;
     flex-direction: column-reverse;
     transition: .6s ease-out;
   }
 
-  .project-images img:last-child{
+  .project-images img:last-child {
     display: none;
   }
 
@@ -226,10 +243,9 @@ h3 {
   }
 
   img {
-    padding: .5rem auto;
+    padding: .5rem auto 1rem;
     padding-right: auto;
     width: 98%;
     height: auto;
   }
-
 }
