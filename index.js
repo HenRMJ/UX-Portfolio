@@ -1,3 +1,4 @@
+// Expands the image when you click on it
 $(".project-images img").click(function() {
   var attr = $(this).attr("id");
 
