@@ -16,13 +16,15 @@ nav {
   padding: 1.5rem 10.2rem 0;
 }
 
-.logo {
+.logo a {
   font-size: 1.125rem;
+  text-decoration: none;
+  color: white;
   transition: .25s;
-  cursor: pointer;
+  cursor: default;
 }
 
-.logo:hover {
+.logo a:hover {
   opacity: .84;
   transition: .25s;
 }
@@ -53,6 +55,7 @@ nav {
 .hero-text {
   margin: 0 auto;
   padding: 3rem 0;
+  cursor: default;
 }
 
 .hero-text p {
@@ -89,6 +92,14 @@ h2 {
 img {
   padding-right: 1rem;
   height: 16.5rem;
+}
+
+#selected-img {
+  padding-right: 1rem;
+  height: 50vh;
+  position: relative;
+  z-index: 10;
+  transition: .5s ease-out;
 }
 
 .project-info {
@@ -128,6 +139,13 @@ h3 {
   transition: .2s ease-out;
 }
 
-i {
+.project-info a {
+  font-size: 1.125rem;
   text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+.hides {
+  display: none;
 }
