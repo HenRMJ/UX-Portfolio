@@ -1,0 +1,315 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+.header {
+  background-color: #0f0f0f;
+}
+
+.section-banner-home {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding-top: 2.4rem;
+  padding-bottom: 4.8rem;
+}
+
+.banner-home-container {
+  min-width: 50rem;
+  width: 90vw;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 0.8rem;
+  justify-content: center;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.first-line {
+}
+
+.first-line,
+.last-line {
+  color: #919191;
+}
+
+.last-line {
+  color: #919191;
+  justify-self: end;
+}
+
+.banner-home-container h1 {
+  font-size: 3.6rem;
+}
+
+.overlay {
+  /* background-image: linear-gradient(to right, #fff, #36bbca); */
+  background-image: url(../src/images/index-images/overlay.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -30% 45%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.case-study-link {
+  font-weight: 700;
+  color: #1234e6;
+  margin-top: 0.9rem;
+}
+
+.flex-column {
+  gap: 1.6rem;
+}
+
+.project-heading {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.img-container {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.grid-ux {
+  display: grid;
+  gap: 4.8rem;
+}
+
+.asel-laptop-img,
+.asel-mobile-img {
+  filter: drop-shadow(5px 7px #391cb0);
+  transition: all 0.3s ease-in;
+}
+.chess-laptop-img,
+.chess-mobile-img {
+  filter: drop-shadow(5px 7px #3b730d);
+  transition: all 0.3s ease-in;
+}
+.beep-n-bop-img {
+  filter: drop-shadow(5px 7px #3d00d8);
+  transition: all 0.3s ease-in;
+}
+
+.asel-laptop-img:hover,
+.asel-mobile-img:hover,
+.beep-n-bop-img:hover {
+  filter: drop-shadow(1rem 1.4rem #391cb0);
+}
+
+.chess-laptop-img:hover,
+.chess-mobile-img:hover {
+  filter: drop-shadow(1rem 1.4rem #3b730d);
+}
+
+.high-res-img {
+  width: 75vw;
+}
+
+.mobile-img {
+  width: 34vw;
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-full-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.hidden {
+  display: none;
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  /* .grid-ux {
+    grid-template-columns: 55fr 45fr;
+  } */
+  .img-container {
+  }
+  .asel-laptop-img,
+  .asel-mobile-img,
+  .chess-laptop-img,
+  .chess-mobile-img,
+  .beep-n-bop-img {
+    /* max-width: 100%;
+    
+    display: block; */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    /* height: 100%;
+    object-fit: cover; */
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+@media (max-width: 59em) {
+  .grid-ux {
+    grid-template-columns: 1fr;
+    /* grid-template-columns: 390px; */
+    grid-template-areas:
+      'a'
+      'b'
+      'c'
+      'd'
+      'e'
+      'f';
+    gap: 3.2rem;
+  }
+
+  section {
+    padding: 3.2rem 0;
+  }
+
+  .container {
+    padding: 0 2.4rem;
+  }
+
+  .main-nav-list {
+    padding: 2.4rem;
+  }
+
+  .heading-primary {
+    font-size: 6.2rem;
+    margin-bottom: 0;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+    margin-bottom: 0;
+  }
+
+  .flex-column {
+    gap: 1.2rem;
+  }
+
+  .img-container {
+    margin: 0 auto;
+  }
+
+  .mobile-img {
+    width: 30vw;
+  }
+
+  .asel-project-info {
+    grid-area: a;
+  }
+
+  .chess-project-info {
+    grid-area: c;
+  }
+
+  .beep-project-info {
+    grid-area: e;
+  }
+
+  .banner-home-container h1 {
+    font-size: 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 44em) {
+  .banner-home-container h1 {
+    font-size: 2.8rem;
+  }
+
+  .high-res-img {
+    width: 90vw;
+  }
+
+  .mobile-img {
+    width: 40vw;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  html {
+    overflow-x: hidden;
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .main-nav {
+    height: 5rem;
+  }
+
+  .main-nav-list {
+    padding: 0 1.6rem;
+    gap: 1.6rem;
+  }
+
+  section {
+    padding: 2.4rem 0;
+  }
+
+  .section-banner-home {
+    padding-top: 1.2rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .banner-home-container {
+    min-width: 20rem;
+  }
+
+  .banner-home-container h1 {
+    font-size: 2.4rem;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .asel-laptop-img,
+  .chess-laptop-img,
+  .beep-n-bop-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .asel-mobile-img,
+  .chess-mobile-img {
+    width: 141px;
+    /* height: 264px; */
+    margin: 0 auto;
+  }
+
+  .high-res-img {
+    width: 100vw;
+  }
+
+  .mobile-img {
+    width: 50vw;
+  }
+}

@@ -1,85 +1,105 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font for Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <title>Henry UX</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./index.js" defer></script>
+    <title>Henry UX</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="./index.html" class="main-nav-link" id="author">Henry UX</a></li>
+          <li><a href="./index.html" class="main-nav-link">Home</a></li>
+          <!-- <li><a href="./index.html" class="main-nav-link">Work</a></li> -->
+          <li><a href="#projects-list" class="main-nav-link">Work</a></li>
+          <li><a href="./contact.html" class="main-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="section-banner-home">
+        <div class="banner-home-container">
+          <p class="first-line">Hello I’m Henry Rosales,</p>
+          <h1>
+            Creative Solutions with
+            <span class="overlay">UX Thinking</span>
+          </h1>
+          <p class="last-line">is what I do.</p>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="section-gameplay-design" id="projects-list">
+        <div class="container">
+          <h1 class="heading-primary">UX</h1>
+        </div>
+        <div class="container grid-ux grid--2-cols">
+          <!-- Asel -->
+          <div class="img-container">
+            <img src="./src/images/index-images/asel-laptop.png" alt="asel laptop site" class="asel-laptop-img project-img" data-caption="asel-laptop">
+            <img src="./src/images/index-images/asel-mobile.png" alt="asel mobile site" class="asel-mobile-img project-img" data-caption="asel-mobile">
+          </div>
+          <div class="asel-project-info flex-column">
+            <h2 class="heading-secondary project-heading">Web Platform for Visual Feedback</h2>
+            <p>Asel is a consumer facing web platform for visual creatives to receive feedback for their WIP projects.
+            </p>
+            <a href="./asel.html" class="case-study-link"><i class="fa-regular fa-clipboard fa-lg "></i>View Case Study</a>
+          </div>
+         
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+          <!--Chess -->
+          <div class="img-container">
+            <img src="./src/images/index-images/chess-laptop.png" alt="chess laptop site" class="chess-laptop-img project-img" data-caption="chess-laptop">
+            <img src="./src/images/index-images/chess-mobile.png" alt="chess mobile site" class="chess-mobile-img project-img" data-caption="chess-mobile">
+          </div>
+          <div class="chess-project-info flex-column">
+            <h2 class="heading-secondary project-heading">Redesign for Chess.com</h2>
+            <p>Chess.com held a redesign competition for their homepage. Their main feature is playing chess online.
+            </p>
+            <a href="./chess.html" class="case-study-link"><i class="fa-regular fa-clipboard fa-lg "></i>View Case Study</a>
+          </div>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-  <!-- stylesheets -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <!-- Importing fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <img class="p-img asel-desktop-img hides" src="images/Light Desktop.png" alt="Popout image for the desktop version of Asel" />
-  <img class="p-img asel-mobile-img hides" src="images/Light Mobile.png" alt="Popout image for the mobile version of Asel" />
-  <img class="p-img chess-desktop-img hides" src="images/Final Landing Page.png" alt="Popout image for the desktop version of Asel" />
-  <img class="p-img chess-mobile-img hides" src="images/Frame 7.png" alt="Popout image for the desktop version of Asel" />
-
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="/">Henry UX</a>
+          <!-- Beep N Bop -->
+          <div class="img-container">
+            <img src="./src/images/index-images/beep-n-bop.png" alt="beep-n-bop site" class="beep-n-bop-img project-img" data-caption="beep-desktop"> 
+          </div>
+          <div class="beep-project-info flex-column">
+            <h2 class="heading-secondary project-heading">Video Game in One Week</h2>
+            <p>Beep N’ Bop is a video game that was created in one week. You play as two robots that run around a kitchen trying to find the right ingredients to cook with. 
+            </p>
+            <a href="beep-n-bop.html" class="case-study-link"><i class="fa-regular fa-clipboard fa-lg "></i>View Case Study</a>
+          </div>
+      </section>
+    </main>
+      <div class="overlay-full-img hidden">
+        <div class="modal-container">
+          <img class="high-res-img hidden" id="asel-laptop" src="./src/images/index-images/asel-desktop-high-res.png" alt="">
+          <img class="high-res-img mobile-img hidden" id="asel-mobile" src="./src/images/index-images/asel-mobile-high-res.png" alt="">
+          <img class="high-res-img hidden" id="chess-laptop" src="./src/images/index-images/chess-desktop-high-res.png" alt="">
+          <img class="high-res-img mobile-img hidden" id="chess-mobile" src="./src/images/index-images/chess-mobile-high-res.png" alt="">
+          <img class="high-res-img hidden" id="beep-desktop" src="./src/images/index-images/beep-n-bop copy.png" alt="">
+        </div>
+      <!-- <div class="overlay-full-img hidden"></div> -->
       </div>
-
-      <ul class="nav-links">
-        <li><a href="/" id="current-page">Home</a></li>
-        <li><a href="#work" class="nav-link">Work</a< /li>
-        <li><a href="about" class="nav-link">About</a></li>
-      </ul>
-    </nav>
-
-    <div class="hero-text">
-      <p>Hello I'm Henry Rosales</p>
-      <h1>Creative Solutions with UX Thinking</h1>
-      <p>is what I do.</p>
-    </div>
-  </header>
-
-  <section id="work">
-
-    <h2>UX</h2>
-
-    <div class="project">
-      <div class="project-images">
-        <img class="asel-image-d" src="images/lo-res/Light Desktop.png" alt="Image of the homepage for the desktop version of Asel">
-        <img class="asel-image-m" src="images/lo-res/Light Mobile.png" alt="Image of the homepage for the mobile version of Asel">
-      </div>
-
-      <div class="project-info">
-        <h3>Web Platform for Visual Feedback</h3>
-        <p>Asel is a consumer facing web platform for visual creatives to recieve feedback for their WIP projects.</p>
-        <a href="asel"><i class="far fa-file hides"></i> currently under construction</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="project-images">
-        <img class="chess-image-d" src="images/lo-res/Final Landing Page.png" alt="Image of the homepage for the desktop version of the chess redesign">
-        <img class="chess-image-m" src="images/lo-res/Frame 7.png" alt="Image of the homepage for the mobile version of chess redesign">
-      </div>
-
-      <div class="project-info">
-        <h3>Redesign for Chess.com</h3>
-        <p>Chess.com held a redesign competition for their homepage. Their main feature is playing chess online.</p>
-        <a href="chess"><i class="far fa-file hides"></i> currently under construction</a>
-      </div>
-    </div>
-
-  </section>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="index.js" charset="utf-8"></script>
-</body>
-
+  </body>
 </html>

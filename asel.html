@@ -1,60 +1,617 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Henry UX | Asel Case Study</title>
+    <!-- font for Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- styling -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/asel.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Henry UX | Asel</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="./index.html" class="main-nav-link" id="author"
+              >Henry UX</a
+            >
+          </li>
+          <li><a href="./index.html" class="main-nav-link">Home</a></li>
+          <li><a href="./index.html" class="main-nav-link">Work</a></li>
+          <li><a href="./contact.html" class="main-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="section-banner">
+        <div class="banner container">
+          <div class="banner-details">
+            <h1 class="heading-primary">Asel</h1>
+            <p class="banner-description">
+              Web Platform for visual creatives to give and receive 
+            </p>
+            <p class="banner-description">critiques on their WIP</p>
+          </div>
+          <div class="banner-images-container">
+            <div class="single-img">
+              <img
+                src="./src/images/asel-images/light-desktop.png"
+                alt="Asel homepage desktop view"
+                class="banner-img-1"
+              />
+            </div>
+            <div class="single-img">
+              <img
+                src="./src/images/asel-images/light-mobile.png"
+                alt="Asel mobile desktop view"
+                class="banner-img-2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- <div class="flex-const">
+      <p class="construction">Page still currently under construction</p>
+    </div> -->
+    <main>
+      <!-- SECTION BREAKDOWN -->
+      <section class="breakdown">
+        <div class="container">
+          <h2 class="heading-secondary">Breakdown</h2>
+        </div>
+        <div class="container grid grid--3-cols breakdown-grid">
+          <div class="situation">
+            <h3 class="heading-tertiary">Problem</h3>
+            <p class="problem-details">
+              This project is a greenfield project for visual creators to share
+              feedback.
+              <br /><br />
+              <strong>Goals included:</strong> <br />
+              <div class="problem-details">
+                <p>Making the product accessible</p>
+                <p>Designing at different breakpoints</p>
+                <p>Making the product fun</p>
+              </div>
+            </p>
+          </div>
+          <div class="situation">
+            <h3 class="heading-tertiary ht">Situation</h3>
+            <div class="situation-details ht">
+              <p class="situation-description">
+                I worked <strong>fully remote</strong> over
+                <strong>48 hours in 8 weeks</strong>. I worked solo for the last
+                six weeks of the project.
+              </p>
+            </div>
+          </div>
+          <div class="deliverables">
+            <h3 class="heading-tertiary">Deliverables</h3>
+            <ul class="deliverable-list">
+              <li class="deliverable-item">
+                <i class="fa-solid fa-circle-check"></i>Personas
+              </li>
+              <li class="deliverable-item">
+                <i class="fa-solid fa-circle-check"></i>Journey Map
+              </li>
+              <li class="deliverable-item">
+                <i class="fa-solid fa-circle-check"></i>User Flows
+              </li>
+              <li class="deliverable-item">
+                <i class="fa-solid fa-circle-check"></i>Lo-fi Wireframes
+              </li>
+              <li class="deliverable-item">
+                <i class="fa-solid fa-circle-check"></i>Lo-fi Prototype
+              </li>
+              <li class="deliverable-item">
+                <i class="fa-solid fa-circle-check"></i>Hi-fi Prototype
+              </li>
+              <li class="deliverable-item">
+                <i class="fa-solid fa-circle-check"></i>Hi-fi Wireframes
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION DISCOVERY PHASE -->
+      <section class="discover_bg">
+        <div class="container grid grid--2-cols flex-discovery">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+          <div class="flex-column16">
+            <h2 class="heading-secondary-16">Discovery Phase</h2>
+            <p class="p-discovery">We developed a risk matrix to prioritize our research questions. Our questions focused on the viability of our project. Others focused on how people receive and give feedback, and project habits. </p>
+            <p><strong>How many projects does an individual works on at a single time?</strong></p>
+            <!-- <br> -->
+            <p><strong>What kind of feedback do our users value?</strong></p>
+            <!-- <br> -->
+            <p><strong>Is this product something our users want?</strong></p>   
+          </div>
+          <div>
+             <img class="image-1-icon" src="./public/image-1@2x.png" alt="Risk matrix" class="level-1-img">
+            <i class="example-of-questions-in-survey">Risk matrix to evaluate how to move forward with our research</i>
+          </div>
+         
+       
+      </section>
+       <!-- SECTION Competitive -->
+      <section class="discover_bg">
+        <div class="container">
+          <h2 class="heading-secondary heading-center">Competitive Research</h2>
+        </div>
+        <div class="container container-flex">
+          <img class="image-3-icon" alt="Dribble Logo" src="public/image-3@2x.png" />
+          <img  class="image-2-icon" alt="Art station Logo" src="public/image-2@2x.png"/>
+          <img class="image-4-icon" alt="Behance Logo" src="public/image-4@2x.png" />
+        </div>
+        <div class="container grid-2-cols">
+          <div>
+            <h3 class="heading-tertiary mt24">Our competitors</h3>
+            <p class="p-discovery mt">Dribbble, Art Station, Behance all focus on sharing visual content with a secondary effort in giving comments. We looked at Trello, Slack, and Monday to check their efficacy on communication.</p>
+            <br /><br /><br />
+            <h3 class="heading-tertiary">Key Insight</h3>
+            <ul class="mt deliverable-list">
+              <li class="deliverable-item"><i class="fa-solid fa-exclamation-circle"></i>Contain elements of social media</li>
+              <li class="deliverable-item"><i class="fa-solid fa-exclamation-circle"></i>No strong focus on incentivizing feedback</li>
+              <li class="deliverable-item"><i class="fa-solid fa-exclamation-circle"></i>Often used as a hosting platform for projects</li>
+              <li class="deliverable-item"><i class="fa-solid fa-exclamation-circle"></i>Sites focus heavily on the professional market</li>
+            </ul>
+          </div>
+          
+          <div class="some-flex">
+            <img class="image-11-icon" alt="Trello Logo" src="public/image-11@2x.png" />
+            <img class="image-12-icon" alt="Monday.com logo" src="public/image-12@2x.png" />
+            <img class="image-13-icon" alt="Slack Logo" src="public/image-13@2x.png" />
+          </div>
+        </div>
+      </section>
+       <!-- SECTION SURVEY -->
+      <section class="discover_bg">
+        <div class="container">
+          <h2 class="heading-secondary heading-center">Surveys</h2>
+        </div>
+        <div class="container grid grid--2-cols flex-discovery">
+          <div class="">
+            <h2 class="heading-tertiary xt">Questions</h2>
+            <p class="p-discovery mt">Our questions centered around user tech habits and feedback interactions. We framed the questions to work in any career field to allow a broader range of responses.</p>
+            <br>
+            <p>
+            We limited our questions types to multiple-choice or scale responses to minimize text responses. This made it easier to digest and categorize the survey.</p>
+          </div>
+          <div>
+            <img class="image-5-icon" alt="Bar graph of how much people value anonymous feedback on a scale of 1 - 5 with responses 3 and 5 both equal with 4 votes. Response 4 is next with 3 votes, and response 2 with 2 votes. Response 1 has no votes." src="public/image-5@2x.png" />
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container grid grid--2-cols flex-discovery">
+          <div class="">
+            <h2 class="heading-tertiary xt">Reach and outcomes</h2>
+            <p class="p-discovery mt">After sharing the survey on social media, slack and discord channels, and friends, we received 17 responses, with 11 singing up for user interviews.</p>
+            <br>
+          </div>
+          <div>
+             <img class="image-5-icon" alt="Pie graph of time spent on different devices" src="public/image-14@2x.png" />
+             <i class="example-of-questions-in-survey">Example of questions in survey</i>
+          </div>
+        </div>
+      </section>
+        <!-- SECTION USER INTERVIEWS -->
+        <section class="discover_bg">
+        <div class="container">
+          <h2 class="heading-secondary">User Interviews</h2>
+        </div>
+        <div class="container grid grid-2-cols flex-discovery">
+          <div class="ideas-details flex-column">
+            <div class="">
+              <h2 class="heading-tertiary mt">Questions</h2>
+              <p class="p-discovery mt">We wanted to understand what made feedback good and bad. Our questions dug into how feedback made people feel and what aspects made them feel that way.</p>
+              <br>
+              <h2 class="heading-tertiary pt">Process</h2>
+              <p class="p-discovery mt">Our interviews were conversational, allowing us to dive deeper into aspects of the question.</p>
+              <br>
+              <p>
+                Our initial participants didn't accurately reflect our userbase. We conducted another round of interviews to capture more visual creatives. UX designers and artists.
+              </p> 
+            </div> 
+          </div>
+          <div>
+            <ul class="mt deliverable-list ml20">
+              <h3 class="heading-tertiary">Key Insight</h3>
+              <li class="deliverable-item"><i class="fa-solid fa-exclamation-circle"></i>People felt there is a lack of feedback</li>
+              <li class="deliverable-item"><i class="fa-solid fa-exclamation-circle"></i>People don’t like giving feedback</li>
+              <li class="deliverable-item"><i class="fa-solid fa-exclamation-circle"></i>The source of the feedback is very important</li>
+              <li class="deliverable-item"><i class="fa-solid fa-exclamation-circle"></i>Artist don’t like feedback in general</li> 
+            </ul>
+          </div>
+      </section>
+       <!-- SECTION DEFINING OUR USERS -->
+      <section class="breakdown">
+        <div class="container grid grid--2-cols flex-discovery">
 
-  <!-- stylesheets -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
+          <div class="ideas-details flex-column">
+            <h2 class="heading-secondary hs">Defining our users</h2>
+            <p class="p-discovery">Each color represents a participant, with each takeaway on a sticky note. We crafted an affinity map and found similarities between all our interviewees.</p>
+            <p>An example is that people feel there's always a lack of feedback.</p>
+          </div>
+          <div>
+            <img class="image-1-icon frame-1-2-1" src="./public/frame-1-2-1@2x.png" alt="Affinity Map of user interviews" class="level-1-img">
+            <i class="example-of-questions-in-survey">Affinity map of second round of interviews</i>
+          </div>
+      </section>
+      <section class="breakdown">
+        <div class="container grid grid--2-cols flex-discovery">
 
-  <!-- Importing fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
+          <div class="ideas-details flex-column">
+            <h2 class="heading-tertiary hs xt">Persona</h2>
+            <p class="p-discovery">The persona guided us with design decisions. It helped with the creation of the journey map. The journey map itself wasn’t as useful since the project was only theoretical. Our persona used aspects like common apps to keep our design familiar with our users.</p>
+          </div>
+          <div>
+            <img src="./public/persona-joanna-abrams@2x.png" alt="Persona of Joanna a possible user compiled from user data">
+            <i class="example-of-questions-in-survey">Persona of user looking for feedback</i>
+          </div>
+      </section>
+       <section class="breakdown">
+        <div class="container grid grid--2-cols flex-discovery">
 
-<body>
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="/">Henry UX</a>
+          <div class="ideas-details flex-column">
+            <h2 class="heading-tertiary hs xt">User flow</h2>
+            <p class="p-discovery">While we were figuring out our users we began to think about our flows. How submitting a project would look is something we focused heavily on.</p>
+            <p class="p-discovery">
+              We focused on ways that users could easily edit preferences while keeping the flow simple. At this point, we wanted to keep all the actions on one page. This helped churn ideas of how the UI could look so we wouldn’t be going into lo-fi design blind.
+            </p>
+          </div>
+          <div>
+            <img src="./public/submitting-projects-1@2x.png" alt="user flow of submitting a project">
+            <i class="example-of-questions-in-survey">User flow of submitting a project</i>
+          </div>
+      </section>
+      <section class="breakdown">
+        <div class="container grid grid-2-cols flex-discovery">
+
+          <div class="ideas-details flex-column">
+            <h2 class="heading-tertiary hs xt">Forgotten Users</h2>
+            <p class="p-discovery">In a longer timeline, I would have wanted to explore more use cases for the project. There are 3 main users that would be interacting with the product.</p>
+            <strong style="color: #016171">Project Submitters</strong>
+            <strong style="color: #C00909">Feedback Givers</strong>
+            <strong style="color: #C00909">Team Builders</strong>
+            <p class="p-discovery">
+              I didn’t properly get to do research on these 2 types of users and this project focuses heavily on project submitters. This is definitely something to research in future iteriations.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="problems">
+        <div class="container">
+          <h2 class="heading-red">Major Problems</h2>
+        </div>
+        <div class="container grid grid-2-cols flex-discovery">
+          <div class="ideas-details flex-column">
+            <p class="p-discovery white-o">Based off of our research, we were concerned about the viability of our product. Critiquing others is something that doesn’t come naturally to people. At the same time, some people don’t even want to be critiqued.</p>
+            <p class="p-discovery white-o">The problem we’ve experienced among artists is that they value feedback from verifiable experience.</p>
+          </div>
+          <div>
+            <p class="p-discovery red weigh700">“... it's like, pretty annoying when randos on twitter think they can lecture me on art”.</p>
+            <i class="example-of-questions-in-survey white">Real quote from user interviews</i>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+           <h2 class="heading-tertiary white-o hs xt">Running a design workshop</h2>
+        </div>
+        <br>
+        <div class="container grid grid--2-cols flex-discovery">
+          <div class="ideas-details flex-column">
+            <p class="p-discovery white-o">I gathered 4 designers to discuss ideas on how to incentivize feedback. We did a brainstorming session that was pretty light hearted. The loose environment helped cultivate out-of-the-box ideas. Some were more feasible than others and we proceeded with dot voting.</p>
+            <p class="p-discovery white-o">
+            Dot voting helped focus in on ideas that were more realistic like offering an ad free experience in exchange for feedback. A solution we liked was offering prizes to top-rated feedback. </p> 
+          </div>
+          <div>
+             <img class="image-1-icon" src="./public/frame-1-1-1@2x.png" alt="Completed dot voting of a workshop ideating features for Asel" class="level-1-img">
+            <i class="example-of-questions-in-survey white">Design workshop to solve for incentives for feedback</i>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+           <h2 class="heading-running green">Solution</h2>
+        </div>
+        <br>
+        <div class="container grid grid-2-cols flex-discovery">
+          <div class="ideas-details flex-column">
+            <p class="p-discovery white-o">The workshop lead us towards the direction of gamification. We planned to incentivize participation by offering rewards. </p>
+            <p class="p-discovery white-o">
+            Rewards include feedback from a professional and promoted posts. These two rewards directly address the issue of a reliable source and lack of feedback. Smaller rewards would be given out to pull into the gamified loop. </p> 
+             <p class="p-discovery white-o">
+            The thought was to distribute points for every interaction on the site.
+            More points would be offered for critiques and positively received critiques would offer even more points.</p> 
+          </div>
+          <div class="ideas-details flex-column">
+            <p class="p-discovery white-o">Adding a leaderboard was also discussed to cultivate competition. The leaderboard would also determine what prizes are given out to which individuals. Different teirs of the leaderboard determines what prizes are rewarded. Position on the leaderboard determines if those prizes are given.</p>
+          </div>
+        </div>
+      </section>
+      <section class="paper">
+        <div class="container grid grid-2-cols flex-discovery">
+          <div class="ideas-details flex-column">
+            <h2 class="heading-secondary white hs xt">Paper sketches</h2>
+            <p class="p-discovery white">The beginning of our ideation process we were still unclear on how we wanted the site to look. We bounced ideas around on a zoom and created a few paper sketches.</p>
+            <h3 class="heading-tertiary white hs xt">Project focused concept</h3>
+            <p class="p-discovery white">Our first concept revolved around keeping the site project based. Our users would have a general overview of their projects and could at a glance see who contributed to what project.</p>
+            <p class="p-discovery white">We discussed about our research and felt that this concept didn’t address enough of our users pain points. It focused heavily on the community aspect of building a project but lacked solutions to providing confidence in feedback.</p>
+            <p class="p-discovery white">The visual layout of this sketch was something we liked and pushed through to our future lo-fi designs.</p>
+          </div>
+          <div>
+             <img src="./public/image-15@2x.png" alt="Paper sketch of a possible layout for the homepage" class="image-15-icon">
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container grid grid-2-cols flex-discovery">
+          <div class="ideas-details flex-column">
+            <h2 class="heading-tertiary white hs xt mg">Addressing the source problem</h2>
+            <p class="p-discovery white">This concept was a direct result of our thinking. Variable circles would represent individuals who contributed more to the project. This idea was attempting to tackle the issue of quality of feedback. The more an individual would contribute to a circle the larger it would get.</p>
+            <p class="p-discovery white">We had the idea of a coursel users would interact with to navigate between projects. This idea also had a similar visual layout with projects and a more in-depth view shown side-to-side.</p>
+          </div>
+          <div>
+             <img src="./public/image-16@2x.png" alt="Paper sketch iteration of homepage" class="image-15-icon mg">
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="container grid grid-2-cols flex-discovery">
+        <div class="ideas-details flex-column">
+          <h2 class="heading-tertiary white hs xt mg">Transitioning into wireframes</h2>
+          <p class="p-discovery white">Summarizing these sketches into a concrete list of ideas was helpful for the beginning of our lo-fi process. </p>
+          <p class="p-discovery white">The circle concept was abandoned even before we jumped into our wireframes. We felt that this idea wouldn’t be practical for onboarding new users. There are established methods of showing interaction.</p>
+          <p class="p-discovery white">The horizontal and vertical layout ideas were things we explored in our wireframes. The concept of having 2 separate ideas shown on 1 screen seemed like a good idea to limit the number of screens the user had to navigate through.</p>
+        </div>
+      </section>
+      <section class="lo-fi">
+        <div class="container">
+          <h2 class="heading-secondary white hs xt">Lo-fi Iterations</h2>
+          <br>
+        </div>
+        <div class="container grid grid-2-cols flex-discovery">
+          <div class="ideas-details flex-column">
+            <img src="./public/lofi1.png" alt="Iteration using material design of homepage" class="level-1-img">
+          </div>
+          <div>
+            <img src="./public/lofi2.png" alt="lo-fi iteration of homepage" class="level-1-img">
+            <i class="example-of-questions-in-survey white hs xt">First iteration of homepage</i>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="container grid grid-2-cols flex-discovery">
+          <div class="ideas-details flex-column">
+            <h2 class="heading-tertiary white hs xt">First Iteriation Ideas</h2>
+            <p class="p-discovery white">Our main objective was to have everything the user needs on the homepage.</p>
+            <p class="p-discovery white">One side would consist of projects to review, while the other side would be incoming feedback.</p>
+            <p class="p-discovery white">We had similar concepts with our previous discussion in mind.</p>
+            <p class="p-discovery white">The major deviation between our designs are the <span style="color:#83F58E">horizonal carosel</span> and the <span style="color:#EEB258">vertical scrolling.</span></p>
+            <p class="p-discovery white">We discussed and landed on vertical scrolling. Our hope was that users could view a substantial amount of projects in a short time. A carosel would be more difficult to navigate between projects.</p>
+            <p class="p-discovery white">The design was too busy having 2 different views on one screen. We found that separating these views into 2 pages cleaned up the design and made it less intimidating.</p>
+          </div>
+          <div>
+             <img src="./public/desktop--19-1@2x.png" alt="lo-fi iteration of homepage with some material design components" class="">
+          </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="container grid grid--2-cols flex-discovery">
+            <div class="ideas-details flex-column">
+              <h2 class="heading-tertiary white hs xt">Simplification</h2>
+              <p class="p-discovery white">We separated the two feeds into separate pages which allowed us to add more gamification elements.</p>
+              <p class="p-discovery white">The crown was an idea we had to distinguish members that frequently gave valuable feedback.</p>
+              <p class="p-discovery white">Even with these changes we still found that the page would be difficult to read. To help guide the user through the flow we implemented an idea of a tutorial for the site.</p>
+            </div>
+            <br>
+            <br>
+            <div>
+              <img src="./public/homepage-grid-view-1@2x.png" alt="Iteration of asel homepage" class="homepage-grid-view-1">
+            </div>
+        </div>
+      </section>
+      <section class="lo-fi">
+        <div class="grid-1-cols flex-discovery">
+            <img src="./public/image-6@2x.png" alt="snippit of lo-fi asel prototype" class="image-6">
+        </div>
+        <div class="container flex-lo-fi">
+            <i class="example-of-questions-in-survey white">Lo-fi prototype to test tutorial and other main functions</i>
+        </div>
+        </section>
+      </section>
+      <div class="lo-fi mb">
+        <div class="container grid grid-2-cols flex-discovery">
+            <div class="ideas-details flex-column">
+              <h3 class="heading-tertiary white hs xt zt">Testing Prototype</h3>
+              <p class="p-discovery white">We felt our product warranted a tutorial. After desiging it, we tested it and everyone choose to skip the tutorial.</p>
+              <p class="p-discovery white">Without this testing we would have spent an inordinate amount of time trying to create this feature no one wanted.</p>
+            </div>
+            <div>
+             <img src="./public/first-tutorial-1@2x.png" alt="first iteration of tutorial flow for Asel" class="first-tutorial-1 zt">
+             <i class="example-of-questions-in-survey white">Tutorial guide for the homepage</i>
+            </div>
+        </div>
       </div>
+      
+      
+      </section>
+       <section class="discover">
+        <div class="container grid grid--2-cols flex-discovery">
+          <div class="ideas-details flex-column">
+            <h2 class="heading-secondary xt">Mid to High Fidelity</h2>
+          </div>
+        </div>
+        <div class="container grid grid--2-cols flex-discovery">
+          <div class="ideas-details flex-column">
+            <img src="./public/image-7@2x.png" alt="design workshop different iterations of the homepage" class="image-6-icon">
+            <div class="flex-lo-fi">
+               <i class="example-of-questions-in-survey ac">Ideating new main component</i>
+            </div>
+          </div>
+        </div>
+      </section>
+       <section class="discover">
+        <div class="container grid grid--2-cols flex-discovery">
 
-      <ul class="nav-links">
-        <li><a href="/" class="#nav-link">Home</a></li>
-        <li><a href="#" class="nav-link">Work</a< /li>
-        <li><a href="about" class="nav-link">About</a></li>
-      </ul>
-    </nav>
+          <div class="ideas-details">
+            <h2 class="heading-tertiary">Main component group iteration</h2>
+            <p class="p-discovery pb">I asked a few other designers to help with simplifying the main component. This image was the one that was closest to what I was looking for.</p>
+            <p class="p-discovery pb">
+              There was a fundamental issue with the concept of trying to fit all the information on one screen.
+            </p>
+          </div>
+          <div>
+            <img class="image-joanna" src="./public/image-8@2x.png" alt="A designed component of an asel post">
+          </div>
+      </section>
+      <div class="">
+        <div class="container grid grid--2-cols flex-discovery">
+          <div class="ideas-details pb">
+            <h2 class="heading-tertiary">Main color scheme</h2>
+            <p class="p-discovery pb">I was trying to figure out the main primary color for the product. I choose these colors specifically because of their attachment to highlighters.</p>
+            <p class="p-discovery pb">They all also pass contrast AA compliance and most pass AAA.</p>
+          </div>
+          <div>
+            <img class="image-joanna image-8" src="./public/image-9@2x.png" alt="a simple mockup of different color schemes created for dot voting">
+          </div>
+      </div>
+      <section class="">
+        <div class="container flex-discovery">
+          <div class="ideas-details flex-column">
+            <img src="./public/signed-in-profile-page-user-page-1@2x.png" alt="hi-fi iteration of the asel profile page" class="image-6-icon">
+            <div class="flex-lo-fi">
+               <i class="example-of-questions-in-survey ac">Exploration of color before group iteration</i>
+            </div>
+          </div>
+        </div>
+      </section>
+       <section class="">
+        <div class="container grid grid--2-cols flex-discovery">
+          <div class="ideas-details flex-column zt">
+            <h2 class="heading-tertiary hs xt npt">Implementing gamification</h2>
+            <p class="p-discovery">I wanted to explore the concept of gamification in this project. I knew that making people leave feedback would be a challenge. Gamification elements like the leaderboard and points system were added to push people to leave critiques.</p>
+            <p class="p-discovery">The reward system was also attached to the leaderboard. Each tier on the leaderboard would unlock a specific reward that we learned people wanted during our user interviews.</p>
+            <div class="flex-list">
+              <ul>
+                <li><b>Points System</b></li>
+                <li>5 points per critique</li>
+                <li>1 point per upvote on a critique</li>
+              </ul>
+              <ul>
+                <li><b>Rewards</b></li>
+                <li>Profile customization</li>
+                <li>Boosted post</li>
+                <li>Feedback from a professional</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <img class="image-joanna nptp" src="./public/picasel.png" alt="hi-fi iteration of the leaderboard">
+            <br>
+            <br>
+            <div class="flex-lo-fi">
+               <i class="example-of-questions-in-survey ac">Leaderboard page with light search bar and updated sidebar</i>
+            </div>
+           
+          </div>
+      </section>
+      <section class="">
+        <div class="container grid grid--2-cols flex-discovery">
+          <div class="ideas-details flex-column">
+            <h2 class="heading-tertiary hs xt nptp">Changes to Hi-Fi</h2>
+            <p class="p-discovery wdd">Changes from mid-fi to hi-fi included moving the title to right side to allow for more space for the project to be seen.</p>
+            <p class="p-discovery wdd">I changed the search bar to match the rest of the dark aesthetic in the design.</p>
+            <p class="p-discovery wdd">The side bar had a lot of iterations and experimentation with icons, logos, buttons, scroll bars. I landed on this for the time being.</p>
+            <p class="p-discovery wdd">After these changes I was hitting close to the deadline. I wanted to make sure that there were no major usability issues. I developed a Hi-Fi prototype and looked for participants for testing.</p>
+          </div>
+          <div>
+            <img class="homepage-grid-view-1" src="./public/signed-in-home-page-feedback-1-a-4@2x.png" alt="iteration of the comments section for a post">
+          </div>
+      </section>
+      <img src="./public/image-110.png" alt="snippit of hi-fi prototype" class="image-6-icon pb">
+      <div class="flex-lo-fi">
+               <i class="example-of-questions-in-survey ac">High Fidelity Prototype</i>
+      </div>
+      </div>
+       <section class="">
+        <div class="container grid grid--2-cols flex-discovery">
+          <div class="ideas-details flex-column">
+            <h2 class="heading-tertiary hs xt">Testing prototype</h2>
+            <p class="p-discovery">The testing faired better than I anticipated. The home screen was still a troubled issue with the component. </p>
+            <p class="p-discovery">Submitting feedback is a big issue with all our participants unclear of how they were supposed to complete the task. Watching the participant seemed like the issue was with the split screen design. They expected all of their actions to take place on the left side of the page and didn’t even look at the right side. Going forward the changes to make would be to move all the interactable elements to the left side of the screen. There could also be a version with the feedback form taking up the entire screen.</p>
+            <p class="p-discovery">I was able to complete a few changes before the deadline but wasn’t able to address every issue found during testing.</p>
+          </div>
+          <div>
+            <img class="leaving-a-comment-62-1" src="./public/leaving-a-comment-62-1@2x.png" alt="iteration of writing a comment screen">
+      </section>
+      <section class="problems">
+        <div class="container">
+          <h2 class="heading-tertiary white">Final Designs</h2>
+        </div>
+        <br>
+        <div class="grid-user-flow">
+          <div>
+            <!-- pictures  -->
+            <img class="figmaexport1" src="./public/figmaexport1.png" alt="dark mode homepage desktop screen">
+            <img class="figmaexport2" src="./public/figmaexport2.png" alt="Dark mode homepage tablet screen">
+            <img class="figmaexport3" src="./public/figmaexport3.png" alt="dark mode leaderboard destop screen">
+          </div>
+          <div>
+             <img class="light-mobile-1" src="./public/light-mobile-1@2x.png" alt="light mode homepage mobile screen">
+              <img class="leaving-a-comment-78" src="./public/leaving-a-comment-78-1@2x.png" alt="dark mode login desktop screen">
+              <img class="leaving-a-comment-81" src="./public/leaving-a-comment-81-1@2x.png" alt="dark mode password verification desktop screen">
+              <img class="setting-page-1" src="./public/setting-page-1-1@2x.png" alt="dark mode settings desktop screen">
+          </div>
+        </div>
+        </div>
+      </section>
+      <!-- SECTION RETROSPECTIVE -->
+      <section class="section-retrospective">
+        <div class="container">
+          <h2 class="heading-secondary">Retrospective</h2>
+        </div>
+        <div class="container grid grid--2-cols">
+          <div class="gameplay-design-info flex-column">
+            <p>This was my first big project. There was a lot of steps that my partner and I had taken without fully understanding the purpose behind it.</p>
+            <p>Our research lacked focus. The implementation of the qualatative and quanatative feedback was poor. Onboarding our users was something we spent a lot of time and discusson on and didn’t do much to help make that process better.</p>
+            <p>All in all, I made plenty of mistakes and I learned so much. I feel like I can come back to this project and make it really solid. I do think this idea is a really good one. </p>
+            <p>I dove into gamification and while the implementation of it was not fully thought out in this project, I learned so much theory and what challenges lie when trying to implement it.</p>
+          </div>
+          <div class="asel-mockup-container flex-column">
+            <div class="img-container">
+              <img src="./public/chess-mockup.png" alt="chess.com mockup" class="asel-mockup-img">
+            </div>
+            <a href="./chess.html" class="asel-case-study"><i class="fa-regular fa-clipboard fa-lg"></i>Chess Case Study</a>
+            
+          </div>
 
-    <div class="hero-text">
-      <h1>A Rebel</h1>
-    </div>
-  </header>
-
-  <section class="figma-pholder">
-    <div>
-      <h2 id="h2-figma">That's what you are.</h2>
-      <p class="floating-p">
-        This page is still under construction but, I'm still working on finalizing my design.<br> If you want to take a look at the project right now. There's a figma link to the right.
-      </p>
-    </div>
-
-    <div class="figma-link-container">
-      <a href="https://www.figma.com/proto/9kIAe5UspTk8c7Ffqrkdib/Portfolio?node-id=331%3A0&viewport=241%2C48%2C0.7&scaling=scale-down&starting-point-node-id=343%3A0&show-proto-sidebar=1" target="_blank" class="fab figma-link fa-9x fa-figma"></a>
-    </div>
-  </section>
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="index.js" charset="utf-8"></script>
-</body>
-
+      </section>
+      
+    </main>
+  </body>
 </html>
